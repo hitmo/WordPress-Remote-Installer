@@ -8,7 +8,9 @@ ini_set("display_error",1);
 // GitHub Information
 define( 'GITHUB_USERNAME' , 'lucanos' );
 define( 'GITHUB_PROJECT'  , 'WordPress-Remote-Installer' );
-
+if($_GET['get']){
+extractSubFolder( 'wordpress.zip' , null , 'wordpress' );
+}
 // Version Information
 define( 'WPRI_VERSION'    , '0.3' );
 
